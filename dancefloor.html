@@ -2,19 +2,24 @@
 <html>
   <head>
     <title>Object Dance Party</title>
-    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="stylesheet" type="text/css" href="style/styles.css" />
     <script src="lib/jquery.js"></script>
     <script src="src/dancer.js"></script>
     <script src="src/blinkyDancer.js"></script>
     <script src="src/catDancer.js"></script>
     <script src="src/dogDancer.js"></script>
   </head>
-  <body background="bgimage.jpg">
+  <body background="style/bgimage.jpg">
     <div class="topbar">
       <span class="title">object dance party</span>
-      <a href="#" class="addBlinkyDancerButton" data-dancer-maker-function-name="makeBlinkyDancer">add a blinky dancer</a></div>
-      <a href="#" class="addCatDancerButton" data-dancer-maker-function-name="makeCatDancer">add a cat dancer</a></div>
-      <a href="#" class="addDogDancerButton" data-dancer-maker-function-name="makeDogDancer">add a dog dancer</a></div>
+      <a href="#" class="addDancerButton" data-dancer-maker-function-name="makeBlinkyDancer">add a clippy dancer</a>
+      <a href="#" class="addDancerButton" data-dancer-maker-function-name="makeCatDancer">add a cat dancer</a>
+      <a href="#" class="addDancerButton" data-dancer-maker-function-name="makeDogDancer">add a dog dancer</a>
+      <a href="#" class="lineUp">Line up to party!</a>    
+    </div>      
     <script src="src/init.js"></script>
+    <div class="dancefloor">
+      <div class="partyline"></div>      
+    </div>
   </body>
 </html>

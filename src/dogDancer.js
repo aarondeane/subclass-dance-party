@@ -1,5 +1,5 @@
 var makeDogDancer = function(top, left, timeBetweenSteps) {
-  this.$node = $('<span class="dogDancer"></span>');
+  this.$node = $('<span class="dogDancer"><img src="style/dog.gif"></img></span>');
     makeDancer.call(this, ... arguments);
   };
 
@@ -16,7 +16,7 @@ var makeDogDancer = function(top, left, timeBetweenSteps) {
   // toggle() is a jQuery method to show/hide the <span> tag.
   // See http://api.jquery.com/category/effects/ for this and
   // other effects you can use on a jQuery-wrapped html tag.
-    this.$node.toggle();
+    //this.$node.toggle();
 };
 
 makeDogDancer.prototype.lineUp = function(){};
