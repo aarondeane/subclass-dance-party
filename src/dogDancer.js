@@ -1,4 +1,5 @@
 var makeDogDancer = function(top, left, timeBetweenSteps) {
+  this.$node = $('<span class="dogDancer"></span>');
     makeDancer.call(this, ... arguments);
   };
 
@@ -17,3 +18,5 @@ var makeDogDancer = function(top, left, timeBetweenSteps) {
   // other effects you can use on a jQuery-wrapped html tag.
     this.$node.toggle();
 };
+
+makeDogDancer.prototype.lineUp = function(){};

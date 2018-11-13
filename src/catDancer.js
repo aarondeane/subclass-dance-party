@@ -1,4 +1,5 @@
 var makeCatDancer = function(top, left, timeBetweenSteps) {
+  this.$node = $('<span class="catDancer"></span>');
   makeDancer.call(this, ... arguments);
   };
 
@@ -17,3 +18,5 @@ var makeCatDancer = function(top, left, timeBetweenSteps) {
   // other effects you can use on a jQuery-wrapped html tag.
     this.$node.toggle();
 };
+
+makeCatDancer.prototype.lineUp = function(){};
