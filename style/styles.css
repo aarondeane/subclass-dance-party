@@ -13,18 +13,22 @@ body, a:link, a:visited, a:active{
   color: lightblue;
 }
 .dancefloor{
+  display: flex;
+  justify-content: center;
+  align-content: center;
   height:100%;
-  width:100%;
-  z-index:0;
-  position: relative;
+  width:auto;
+  /*position: relative;*/
 }
 .partyline{
-  margin-top: 400px;
+/*  display: fixed;
+  margin: 0 auto;*/
   height:100px;
-  width:100%;
-  position: relative;
-  z-index:1;
-
+  width: 100%;
+  position: absolute;
+  justify-self: center;
+  align-self: center;
+  top:50%;
 }
 .title, .addDancerButton{
   padding:0px 12px;
@@ -38,12 +42,15 @@ body, a:link, a:visited, a:active{
 }
 .clippyDancer{
   position: absolute;
+  padding:5px;
 }
 
 .catDancer{
   position: absolute;
+  padding:5px;
 }
 
 .dogDancer{
   position: absolute;
+  padding:5px;
 }
