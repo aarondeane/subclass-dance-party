@@ -1,5 +1,5 @@
 var makeDogDancer = function(top, left, timeBetweenSteps) {
-  this.$node = $('<span class="dogDancer"><img src="style/dog.gif"></img></span>');
+  this.$node = $('<span class="dogDancer"><img src="style/pickle-corgi.gif"></img></span>');
     makeDancer.call(this, ... arguments);
   };
 
@@ -19,4 +19,6 @@ var makeDogDancer = function(top, left, timeBetweenSteps) {
     //this.$node.toggle();
 };
 
-makeDogDancer.prototype.lineUp = function(){};
+makeDogDancer.prototype.lineUp = function(){
+  
+};

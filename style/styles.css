@@ -12,13 +12,17 @@ body{
 body, a:link, a:visited, a:active{
   color: lightblue;
 }
+.container {
+  display: grid;
+  grid-template-rows: 10% auto;  
+}
 .dancefloor{
   display: flex;
   justify-content: center;
   align-content: center;
   height:100%;
-  width:auto;
-  /*position: relative;*/
+  width:100%;
+  position: absolute;
 }
 .partyline{
 /*  display: fixed;
@@ -30,7 +34,15 @@ body, a:link, a:visited, a:active{
   align-self: center;
   top:50%;
 }
-.title, .addDancerButton{
+.title {
+  font-size: 20px;
+  font-family: serif;
+  font-weight: bold;
+  color: yellow;
+  padding: 0px 12px;
+}
+
+.addDancerButton{
   padding:0px 12px;
 }
 .topbar{
@@ -38,19 +50,32 @@ body, a:link, a:visited, a:active{
   background-color: #555;
 }
 .title{
-  background-color: #777;
+  background-color: #555;
 }
 .clippyDancer{
   position: absolute;
   padding:5px;
 }
 
+.clippyDancer:hover{
+  transform: scale(1.5);
+}
+
 .catDancer{
   position: absolute;
   padding:5px;
+}
+.catDancer:hover{
+  animation: spin 500ms linear infinite;
 }
 
 .dogDancer{
   position: absolute;
   padding:5px;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
 }

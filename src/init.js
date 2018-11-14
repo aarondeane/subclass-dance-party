@@ -35,7 +35,7 @@ $(document).ready(function() {
   $('.lineUp').on('click', function(event) {
     //loop through the window.dancers array
     window.dancers.forEach(function(dancer) {      
-      dancer.css("top", "0", "left", "auto", "position", "relative");
+      dancer.css('top', '0', 'left', 'auto', 'position', 'relative');
       //one by one move dancers from dancefloor to span in middle of page
       dancer.appendTo($('.partyline'));
     });
